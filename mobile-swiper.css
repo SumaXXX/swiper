@@ -140,7 +140,7 @@
   margin-left: 57px;
   margin-bottom: 16px;
   color: rgb(27, 28, 33);
-  background: url('/icons/arrows.svg') left no-repeat;
+  background: url('./icons/arrows.svg') left no-repeat;
 }
 
 .brands__brand.visibale {
