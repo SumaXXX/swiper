@@ -1,0 +1,148 @@
+@import url("./node_modules/swiper/swiper-bundle.css");
+
+.swiper {
+  min-width: 320px;
+  height: 300px;
+}
+
+.repair-swiper {
+  min-width: 0px;
+}
+
+.repair-swiper-title {
+  color: rgb(126, 126, 130);
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 16px;
+  height: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.swiper {
+  background: rgb(248, 248, 248);
+  position: relative;
+  max-height: 130px;
+}
+
+.swiper-pagination {
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-color: #b5b6bc;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  list-style: none;
+  margin-top: -80px;
+}
+
+.swiper-slide {
+  width: 260px;
+}
+
+.swiper-slide__button {
+  position: absolute;
+  left: 16px;
+  top: 96px;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  height: 72px;
+  width: 240px;
+  margin-right: -100px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.swiper-slide__button-icon {
+  height: 40px;
+  width: auto;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.swiper-slide__button-brand {
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+@media (max-width: 767.99px) {
+  .repair-brands {
+    display: none;
+  }
+}
+
+@media (min-width: 767.99px) {
+  .repair-swiper {
+    display: none;
+  }
+  .repair-brands {
+    display: block;
+  }
+  .brands__brand:nth-child(n + 7 ) {
+    display: none;
+  }
+}
+
+@media (min-width: 1119.99px) {
+
+  .brands__brand:nth-child(n + 7 ) {
+    display: block;
+  }
+  .brands__brand:nth-child(n + 9 ) {
+    display: none;
+  }
+}
+
+.brands {
+  display: inline-flex;
+  min-width: 768px;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-left: 24px;
+  padding-right: 8px;
+  padding-top: 16px;
+  justify-content: start;
+}
+
+.repair-brands {
+  background-color: rgb(248, 248, 248);
+}
+
+.swiper-slide__brand {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  height: 72px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+}
+
+
+.button-read-more {
+  width: 136px;
+  height: 24px;
+  border: none;
+  background-color: rgb(248, 248, 248);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  font-weight: bold;
+  margin-left: 57px;
+  margin-bottom: 16px;
+  color: rgb(27, 28, 33);
+  background: url('/icons/arrows.svg') left no-repeat;
+}
+
+.brands__brand.visibale {
+  display: block;
+}
